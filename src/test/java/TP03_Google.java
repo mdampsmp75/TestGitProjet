@@ -38,7 +38,13 @@ public class TP03_Google {
 
         By resultatRechercheSelector = By.cssSelector("h3 div");
         WebElement resultatRecherche = driver.findElement(resultatRechercheSelector);
+    }
 
+    @Test
+    public void test1(){
+        String recherche = "test1";
+        By barreRecherche = By.xpath("//input[@class='gLFyf gsfi']");
+        driver.findElement(barreRecherche).sendKeys(recherche + Keys.ENTER);
     }
 
 }
