@@ -32,8 +32,6 @@ public class TP03_Google {
         //Arrange
         String recherche = "dla cdg";
         String resultatAttendu = "6h 35min";
-
-
         //Act
         By barreRecherche = By.xpath("//input[@class='gLFyf gsfi']");
         driver.findElement(barreRecherche).sendKeys(recherche + Keys.ENTER);
@@ -41,10 +39,6 @@ public class TP03_Google {
         By resultatRechercheSelector = By.cssSelector("h3 div");
         WebElement resultatRecherche = driver.findElement(resultatRechercheSelector);
 
-        //Action de faire Assert
-
-        //Assert.assertEquals(resultatRecherche,resultatAttendu);
-        //Assert.assertTrue(res);
     }
 
 }
